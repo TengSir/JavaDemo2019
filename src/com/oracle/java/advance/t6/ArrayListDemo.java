@@ -94,10 +94,9 @@ public class ArrayListDemo
         a.add(s5);
         a.add(s6);
         a.add(s7);
-        for(Object o:a){
-            System.out.println(o.toString());
+        a.add(234);
+        a.add("test");
 
-        }
         System.out.println("------");
         Collections.sort(a);
 
@@ -184,8 +183,8 @@ public class ArrayListDemo
 
     @Test
     public void testVector(){
-        final Vector  nums=new Vector();//重量级，线程安全，速度慢
-//        final ArrayList nums=new ArrayList();//轻量级，线程不安全，速度快
+//        final Vector  nums=new Vector();//重量级，线程安全，速度慢
+        final ArrayList nums=new ArrayList();//轻量级，线程不安全，速度快
         for(int n=0;n<5;n++){
            new Thread(){
                @Override

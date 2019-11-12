@@ -15,6 +15,7 @@ public class SetDemo {
     @Test
     public void testHashSet(){
         //迭代器用来专门输出集合数据的一个工具类，具有一次性，单向不可逆
+        //hashset集合添加新对象时如果，该对象和集合里现有的数据重复，则add方法不执行，返回false
         Set  names=new HashSet();
         names.add("jack");
         names.add("rose");
