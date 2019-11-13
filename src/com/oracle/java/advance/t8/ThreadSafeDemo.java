@@ -3,7 +3,6 @@ package com.oracle.java.advance.t8;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Vector;
-
 public class ThreadSafeDemo {
     public static void main(String[] args) {
 //        final Vector<Integer> nums=new Vector<Integer>();//Vector的add方法同步了，所以是线程安全的
