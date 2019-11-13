@@ -1,5 +1,8 @@
 package com.oracle.java.advance.t8;
 
+/**
+ * 多线程创建方式和运行案例演示
+ */
 public class ThreadDemo {
 
     public static void main(String[] args) {
