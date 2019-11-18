@@ -9,6 +9,7 @@ public class FileInputAndOutputDemo {
         /**
          * 可以使用FileinputStream和FileOutputStream对一个文件进行复制操作
          */
+
         try {
             FileInputStream source=new FileInputStream("resource/music.wav");
             FileOutputStream dest=new FileOutputStream("/Users/tengsir/1.wav");
@@ -18,10 +19,11 @@ public class FileInputAndOutputDemo {
                 dest.write(bs,0,length);
                 System.out.println(length);
             }
-            source.close();
-            dest.close();
+
         } catch (Exception e) {
             e.printStackTrace();
+        }finally {
+
         }
     }
 }

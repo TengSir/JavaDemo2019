@@ -1,0 +1,31 @@
+Java常见的IO流
+
+字节流
+InputStream  OutputStream
+
+FileInputStream FileOutputStream 针对文件的输入输出流(节点流)
+
+DataInputStream  DataOutputStream 针对java中常见的8中基本类型和String读写的流（过滤流）
+
+BufferedInputStream  BufferedOutputStream这个流也是过滤流，它提供缓存能力，可以提高读写效率
+
+ObjectInputStream（反序列化）    ObjectOutputStream（序列化） 这个流可以称之为对象流（专门读写对象的），序列化和反序列化流
+序列化是什么含义？ 序列化的意思是将java程序运行过程中的内存中的数据存储到硬盘文件中
+序列化是一种简单意义上的数据存储机制
+
+ObjectXXXStream=FileXXStream+DataXXStream+BufferedXXSTream
+
+字符流
+Reader 输入流   Writer 输出流
+FileReader  FileWriter  字符输入流和输出流（节点流）
+
+InputStreamReader OutputStreamWriter 字节转化成字符的转换流
+
+BufferedReader BufferedWriter 带缓存功能的字符流（可以按行的方式来对字符文件进行读写）,读写文本文件尽量用这一组。
+
+
+
+节点流和过滤流的区别：
+
+1.节点流功能相对单一，过滤流功能一般比较高级
+2.节点流构造比较简单（直接关联到数据介质（文件）），过滤流构造比较复杂（必须由基础的节点流构造而来（不能直接关联文件））
